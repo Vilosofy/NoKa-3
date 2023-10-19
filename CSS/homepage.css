@@ -1,0 +1,421 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body
+{
+    background: #131C32;
+}
+
+.header
+{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+/* navbar */
+nav
+{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    padding-top: 1%;
+    transition: 1s;
+}
+
+nav img
+{
+    width: 300px;
+    padding: 5%;
+}
+
+.navigation-menu ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 50px;
+    position: relative;
+}
+
+.navigation-menu ul li a
+{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navigation-menu ul li a:hover
+{
+    border: 3px solid #4A81FD;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    color: #4A81FD;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.scrollColor
+{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50px;
+    transition: all 1s;
+    border-radius: 50px;
+    padding: 25px;
+}
+
+.register-menu
+{
+    position: relative;
+    width: auto;
+    margin-left: 32%;
+}
+
+.register-button
+{
+    color: white;
+    background: transparent;
+    border: transparent;
+    margin-bottom: 10%;
+    padding-top: 10%;
+}
+
+.register-button:hover
+{
+    border: 3px solid #4A81FD;
+    color: #4A81FD;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.register-button, .list
+{
+    color: white;
+    background: none;
+    border: none;
+    width: 190px;
+    font-size: 25px;
+}
+
+.menu-list
+{
+    border: 3px solid #4A81FD;
+    position: absolute;
+    transform-origin: top;
+    transform: scaleY(0);
+    width: 185px;
+}
+
+.menu-list a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.new-menu
+{
+    transform: scaleY(1);
+}
+
+.list
+{
+    padding: 5%;
+}
+
+.list:hover
+{
+    background: #4A81FD;
+    color: white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+/* Opening Text */
+.opening-text
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: auto;
+    top: 35%;
+    left: 6%;
+    text-align: center;
+    font-size: 25px;
+    border: 3px solid white;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.opening-text h1
+{
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 12%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.opening-button
+{
+    border: 2px solid white;
+    width: 32%;
+    padding: 1%;
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.opening-button:hover
+{
+    border: 2px solid #4A81FD;
+    color: #4A81FD;
+}
+
+.opening-text a
+{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 5%;
+}
+
+/* Section 1 */
+
+.section1
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.opening-video
+{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    clip-path: 0 0;
+    transform: translate(0);
+}
+
+.opening-video video
+{
+    transform: translate(0);
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;    
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.section1-overlay
+{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    filter: opacity(60%);
+}
+
+/* Section 2 */
+.section2
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url(/Homepage/Latest\ News\ Background.jpg);
+    background-size: 100% 100%;
+}
+
+.section2-title
+{
+    padding-top: 10%;
+    padding-left: 15%;
+    font-size: 60px;
+    color: white;
+}
+
+.section2-content
+{
+    text-align: center;
+}
+
+.section2-content img
+{
+    padding-top: 2%;
+    max-width: 50%;
+}
+
+/* Section 3 */
+.section3
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.section3-background
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Homepage/Heroes\ Background.png);
+    border: 15px solid #1F2A42;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.section3 h1
+{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+
+/* Section 4 */
+.section4
+{
+    background-image: url(/Homepage/Tournament\ Stadium.jpg);
+}
+
+.section4-title
+{
+    padding-top: 160px;
+    padding-bottom: 35px;
+    padding-left: 152px;
+    font-size: 60px;
+    color: white;
+}
+
+.section4-banner
+{
+    padding-top: 120px;
+}
+
+.section4-banner img
+{
+    width: 100%;
+}
+
+/* Section 5 */
+.section5
+{
+    /* border: 1px solid red; */
+    background-image: url(/Homepage/Pattern.jpg);
+}
+
+.section5-text
+{
+    padding-top: 50px;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.section5-text h2
+{
+    color: #C1C1C1;
+    font-size: 40px;
+}
+
+.section5-text p
+{
+    color: #C1C1C1;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+/* Footer */
+.footer
+{
+    display: flex;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 5%;
+    display: flex;
+    width: auto;
+    height: 32vh;
+    background-color: #0c1222;
+    justify-content: space-between;
+}
+
+.footer-logo
+{
+    margin-top: 2%;
+}
+
+.footer-logo img
+{
+    margin-top: 8%;
+    width: 300px;
+}
+
+.footer-middle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid white;
+    padding-top: 1%;
+    height: 22vh;
+}
+
+.midbox-button
+{
+    margin-top: 5%;
+}
+
+.midbox-button a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-media
+{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 50px;
+}
+
+.social-media img
+{
+    width: 30px;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p
+{
+    color: white;
+}
+
+.esrb img
+{
+    padding-top: 8%;
+    width: 300px;
+}

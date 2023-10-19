@@ -1,0 +1,352 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(/Heroes/Heroes\ Background.png);
+    background-color: rgba(20, 30, 53, 1);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+
+.header
+{
+    position: absolute;
+    z-index: 999;
+    min-width: 100%;
+}
+
+/* navbar */
+nav
+{
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 1%;
+    transition: 1s;
+}
+
+nav img
+{
+    max-width: 300px;
+    padding: 5%;
+}
+
+.navigation-menu ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 50px;
+    position: relative;
+}
+
+.navigation-menu ul li a
+{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.navigation-menu ul li a:hover
+{
+    border: 3px solid #4A81FD;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    color: #4A81FD;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.register-menu
+{   
+    position: relative;
+    width: auto;
+    margin-left: 32%;
+}
+
+.register-button
+{
+    color: white;
+    background: transparent;
+    border: transparent;
+    margin-bottom: 10%;
+    padding-top: 10%;
+}
+
+.register-button:hover
+{
+    border: 3px solid #4A81FD;
+    color: #4A81FD;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.register-button, .list
+{
+    color: white;
+    background: none;
+    border: none;
+    width: 190px;
+    font-size: 25px;
+}
+
+.menu-list
+{
+    border: 3px solid #4A81FD;
+    position: absolute;
+    transform-origin: top;
+    transform: scaleY(0);
+    width: 185px;
+}
+
+.menu-list a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.new-menu
+{
+    transform: scaleY(1);
+}
+
+.list
+{
+    padding: 5%;
+}
+
+.list:hover
+{
+    background: #4A81FD;
+    color: white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+/* Section */
+.section1{
+    max-width: 100%;
+    height: 100vh;
+    padding-bottom: 7%;
+}
+
+.heroes_wrapper {
+    margin-top: 100px;
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.heroes_title {
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+
+.heroes_title h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.content_wrapper {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 55vh;
+    display: flex;
+}
+
+.hero {
+    width: 12vw;
+    height: 55vh;
+    margin-right: 10px;
+}
+
+.hero img:hover {
+    position: relative;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: transform .3s;
+}
+
+.hero:hover > .hero_name {
+    filter: opacity(100%);
+    margin-top: 30px;
+    transform: scale(1.2);
+    transition: transform .3s;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.hero_name {
+    filter: opacity(0%);
+    z-index: 2;
+    position: absolute;
+    width: 12vw;
+    bottom: 0px;
+    padding-top: 8px;
+    height: 4vh;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.hero_name p
+{
+    color: white;
+}
+
+
+.hero img {
+    width: 12vw;
+    height: 55vh;
+}
+
+/* Footer */
+.footer
+{
+    display: flex;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 5%;
+    display: flex;
+    width: auto;
+    height: 32vh;
+    background-color: #0c1222;
+    justify-content: space-between;
+}
+
+.footer-logo
+{
+    margin-top: 2%;
+}
+
+.footer-logo img
+{
+    margin-top: 8%;
+    width: 300px;
+}
+
+.footer-middle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid white;
+    padding-top: 1%;
+    height: 22vh;
+}
+
+.midbox-button
+{
+    margin-top: 5%;
+}
+
+.midbox-button a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-media
+{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 50px;
+}
+
+.social-media img
+{
+    width: 30px;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p
+{
+    color: white;
+}
+
+.esrb img
+{
+    padding-top: 8%;
+    width: 300px;
+}
+
+@media only screen and (max-width: 800px)
+{
+    nav img
+    {
+        width: 200px;
+    }
+
+    nav ul
+    {
+        position: absolute;
+        width: 100%;
+    }
+
+    .navigation-menu ul li a
+    {
+        font-size: 15px;
+    }
+
+    .register-button, .list
+    {
+        font-size: 15px;
+    }
+
+    .footer-logo img
+    {
+        margin-top: 25%;
+        width: 240px;
+    }
+
+    .footer-middle
+    {
+        margin-top: 4%;
+        height: 18vh;
+    }
+
+    .midbox-button a
+    {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .social-media img
+    {
+        width: 20px;
+    }
+
+    .copyright p
+    {
+        font-size: 12px;
+    }
+    
+    .esrb img
+    {
+        margin-top: 20%;
+        width: 200px;
+    }
+
+    
+}

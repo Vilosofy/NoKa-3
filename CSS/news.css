@@ -1,0 +1,319 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(/News/news_bg2.png);
+    background-color: rgba(20, 30, 53, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header
+{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+/* navbar */
+nav
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 1%;
+    transition: 1s;
+}
+
+nav img
+{
+    width: 300px;
+    padding: 5%;
+}
+
+.navigation-menu ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 50px;
+    position: relative;
+}
+
+.navigation-menu ul li a
+{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navigation-menu ul li a:hover
+{
+    border: 3px solid #4A81FD;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    color: #4A81FD;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.register-menu
+{
+    position: relative;
+    width: auto;
+    margin-left: 32%;
+}
+
+.register-button
+{
+    color: white;
+    background: transparent;
+    border: transparent;
+    margin-bottom: 10%;
+    padding-top: 10%;
+}
+
+.register-button:hover
+{
+    border: 3px solid #4A81FD;
+    color: #4A81FD;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.register-button, .list
+{
+    color: white;
+    background: none;
+    border: none;
+    width: 190px;
+    font-size: 25px;
+}
+
+.menu-list
+{
+    border: 3px solid #4A81FD;
+    position: absolute;
+    transform-origin: top;
+    transform: scaleY(0);
+    width: 185px;
+}
+
+.menu-list a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.new-menu
+{
+    transform: scaleY(1);
+}
+
+.list
+{
+    padding: 5%;
+}
+
+.list:hover
+{
+    background: #4A81FD;
+    color: white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+.section1
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15%;
+    display: flex;
+}
+
+.section1 img
+{
+    width: 100%;
+}
+
+.section1 h2
+{
+    color: white;
+}
+
+.right-news
+{
+    display: flex;
+}
+
+
+/* Content */
+/* .news_wrapper {
+    margin-top: 150px;
+    position: absolute;
+}
+
+.news_title {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.news_title h1 {
+    font-weight: bold;
+    font-size: 80px;
+    padding-top: 8%;
+}
+
+.content_wrapper {
+    margin-left: 80px;
+    display: flex;
+}
+
+.left_box {
+    padding-left: 50px;
+    width: 30%;
+    height: 60vh;
+    margin-right: 20px;
+}
+
+.left_box img {
+    border: solid;
+    height: 62vh;
+    width: 100%;
+}
+
+.right_box {
+    width: 60%;
+    height: 60vh;
+    padding-right: 150px;
+}
+
+.upper {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.upper img {
+    border: solid;
+    height: 30vh;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.lower {
+   
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.lower img {
+    border: solid;
+    height: 30vh;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.section1 {
+    height: 100vh;
+    padding-bottom: 370px;
+}
+
+.section1 h2
+{
+    margin-bottom: 5%;
+}
+
+.section1 h2, p
+{
+    color: white;
+} */
+
+/* Footer */
+.footer
+{
+    display: flex;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 5%;
+    display: flex;
+    width: auto;
+    height: 32vh;
+    background-color: #0c1222;
+    justify-content: space-between;
+}
+
+.footer-logo
+{
+    margin-top: 2%;
+}
+
+.footer-logo img
+{
+    margin-top: 8%;
+    width: 300px;
+}
+
+.footer-middle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid white;
+    padding-top: 1%;
+    height: 22vh;
+}
+
+.midbox-button
+{
+    margin-top: 5%;
+}
+
+.midbox-button a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-media
+{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 50px;
+}
+
+.social-media img
+{
+    width: 30px;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p
+{
+    color: white;
+}
+
+.esrb img
+{
+    padding-top: 8%;
+    width: 300px;
+}

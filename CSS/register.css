@@ -1,0 +1,195 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(/Login/Login\ Background.jpg);
+    max-width: 100%;
+}
+
+.header
+{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+/* navbar */
+nav
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 1%;
+    transition: 1s;
+}
+
+nav img
+{
+    width: 300px;
+    padding: 5%;
+}
+
+.navigation-menu ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 50px;
+    position: relative;
+}
+
+.navigation-menu ul li a
+{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navigation-menu ul li a:hover
+{
+    border: 3px solid #4A81FD;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    color: #4A81FD;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.login-menu
+{
+    position: relative;
+    width: auto;
+    margin-left: 32%;
+}
+
+.login-menu a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.login-menu a:hover
+{
+    color: #4A81FD;
+}
+
+.login-button
+{
+    color: white;
+    background: transparent;
+    border: transparent;
+    margin-bottom: 10%;
+    padding-top: 10%;
+}
+
+.login-button:hover
+{
+    border: 3px solid #4A81FD;
+    color: #4A81FD;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.login-button
+{
+    color: white;
+    background: none;
+    border: none;
+    width: 190px;
+    font-size: 25px;
+}
+
+/* Form Content */
+#form-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.form-title
+{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20%;
+}
+
+.form-content
+{
+    display: flex;
+    flex-direction: column;
+    background: #141E35;
+    padding: 5%;
+}
+
+.form-login
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login p
+{
+    color: white;
+}
+
+.form-login a
+{
+    color: lightskyblue;
+}
+
+#email
+{
+    background: #767676;
+    height: 2vh;
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+#password
+{
+    background: #767676;
+    height: 2vh;
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+#username
+{
+    background: #767676;
+    height: 2vh;
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+::-webkit-input-placeholder
+{
+    color: #ECE8E1;
+}
+
+.signed
+{
+    text-align: left;
+    color: white;
+}
+
+.submit
+{
+    color: white;
+    background: #424242;
+    width: 300px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 40px;
+}

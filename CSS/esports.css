@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgba(236, 232, 225, 1);
+}
+
+.header
+{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+/* navbar */
+nav
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 1%;
+    transition: 1s;
+}
+
+nav img
+{
+    width: 300px;
+    padding: 5%;
+}
+
+.navigation-menu ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 50px;
+    position: relative;
+}
+
+.navigation-menu ul li a
+{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navigation-menu ul li a:hover
+{
+    border: 3px solid #4A81FD;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    color: #4A81FD;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.register-menu
+{
+    position: relative;
+    width: auto;
+    margin-left: 32%;
+}
+
+.register-button
+{
+    color: white;
+    background: transparent;
+    border: transparent;
+    margin-bottom: 10%;
+    padding-top: 10%;
+}
+
+.register-button:hover
+{
+    border: 3px solid #4A81FD;
+    color: #4A81FD;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.register-button, .list
+{
+    color: white;
+    background: none;
+    border: none;
+    width: 190px;
+    font-size: 25px;
+}
+
+.menu-list
+{
+    border: 3px solid #4A81FD;
+    position: absolute;
+    transform-origin: top;
+    transform: scaleY(0);
+    width: 185px;
+}
+
+.menu-list a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.new-menu
+{
+    transform: scaleY(1);
+}
+
+.list
+{
+    padding: 5%;
+}
+
+.list:hover
+{
+    background: #4A81FD;
+    color: white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+/* content */
+.esports_wrapper {
+    margin-top: 100px;
+    /* height: 200vh; */
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/E-Sport/esport-bg.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: right;
+}
+
+.esports_wrapper h1
+{
+    margin-top: 10%;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 210vh;
+    background-color: rgba(20, 30, 53, 1);
+}
+
+.esports_title {
+    width: 100vh;
+    float: left;
+    padding-left: 25px;
+    padding-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    /* background-color:royalblue; */
+}
+
+.esports_title h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 275px;
+    /* background-color: red; */
+}
+
+.esports_wrapper h1{
+    font-weight: bold;
+    font-size: 75px;
+}
+.rank_table {
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vh;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+
+.rank {
+    width: 15%;
+    height: 50vh;
+    background-color: rgba(44, 62, 73, 0.3);
+    font-size: 20px;
+}
+
+.team {
+    width: 30%;
+    height: 50vh;
+    background-color: rgba(44, 62, 73, 0.3);
+    font-size: 20px;
+    /* background-color: red; */
+}
+
+.record {
+    width: 15%;
+    height: 50vh;
+    background-color: rgba(44, 62, 73, 0.3);
+    font-size: 20px;
+}
+
+.title {
+    width: 100%;
+    bottom: 0px;
+    padding-top: 8px;
+    height: 4vh;
+    background-color: rgba(15, 21, 25, 1);
+    font-size: 20px;
+}
+
+.rank_data {
+    margin-top: 35px;
+}
+
+.rank_data_middle {
+    margin-top: 28px;
+    display: flex;
+}
+
+.rank_data_middle h3 {
+    margin-left: 30px;
+}
+
+.rank_data_middle img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.match_table {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.match_detail_table {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+
+}
+
+.match_detail {
+    align-items: center;
+    margin-right: 20px;
+    width: 60%;
+    height: 12vh;
+    background-color: rgba(44, 62, 73, 0.3);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.match_detail:hover {
+    background-color: rgba(44, 62, 73, 1);
+}
+
+.left_side {
+    display: flex;
+}
+
+.left_side h1 {
+    padding-left: 30px;
+    padding-right: 5px;
+    font-size: 40px;
+}
+
+.tanggal {
+    padding-top: 6px;
+    text-align: left;
+    font-size: 15px;
+    /* background-color: red; */
+}
+
+.jam {
+    text-align: left;
+    font-size: 15px;
+    /* background-color: red; */
+}
+
+.middle_side {
+    display: flex;
+}
+
+.middle_side img {
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+}
+.right_side1{
+    padding-right: 30px;
+    margin-left: 30px;
+}
+.right_side2{
+    padding-right: 30px;
+    margin-left: 55px;
+}
+.right_side3{
+    padding-right: 30px;
+}
+.right_side4{
+    padding-right: 30px;
+    margin-left: 25px;
+}
+.right_side5{
+    padding-right: 30px;
+    margin-left: 10px;
+}
+.right_side{
+    padding-right: 30px;
+}
+.separator {
+    width: 30px;
+}
+
+.separator1 {
+    width: 20px;
+}
+
+/* Footer */
+.footer
+{
+    display: flex;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 5%;
+    display: flex;
+    width: auto;
+    height: 32vh;
+    background-color: #0c1222;
+    justify-content: space-between;
+}
+
+.footer-logo
+{
+    margin-top: 2%;
+}
+
+.footer-logo img
+{
+    margin-top: 8%;
+    width: 300px;
+}
+
+.footer-middle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid white;
+    padding-top: 1%;
+    height: 22vh;
+}
+
+.midbox-button
+{
+    margin-top: 5%;
+}
+
+.midbox-button a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-media
+{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 50px;
+}
+
+.social-media img
+{
+    width: 30px;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p
+{
+    color: white;
+}
+
+.esrb img
+{
+    padding-top: 8%;
+    width: 300px;
+}
